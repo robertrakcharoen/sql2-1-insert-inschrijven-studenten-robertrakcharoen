@@ -5,10 +5,11 @@ De inschijvingen voor het volgende schooljaar zijn vol in gang.
 Omdat de web-interface van het studenten-informatie-systeem er al een tijdje uitligt, 
 is er besloten dat we de inschrijvingen rechtstreeks met SQL gaan doen.
 
-
-
-## Voorbereiding
+# Voorbereiding
 Installeer de database dmv het bestand lo8e-sql2_1.sql
+
+# Inleveren
+Zorg dat alle commits gemerged zijn naar de develop-branch en push deze naar github.
 
 # Opdracht
 Schrijf de SQL code voor de hieronderstaande deelopdrachten in het bestand 'inschrijvingen.sql'.
@@ -21,18 +22,27 @@ Voeg 3 records toe aan de tabel klassen met de volgende eisen:
 - cohort: 2019
 - opleiding_code 'amo'
 
+*Vergeet niet te committen!*
+
 ## 2 Studenten aanmaken
 Voeg 3 records toe aan de tabel studenten.
-Verzin zelf de personalia en geef ze een ov_nummer tussen 90000 en 99999. 
+- ov_nummer: tussen 90000 en 99999. 
+- Verzin zelf de rest van de velden
+
+*Vergeet niet te committen!*
 
 ## 3 Koppelen student klas
 Voeg 3 records toe aan de tabel klassen_studenten. 
-Zorg dat de studenten die je net hebt toegevoegd elk aan een klas toegevoegd worden. 
-Ze mogen niet in de zelfde klas terecht komen.
+- Zorg dat de studenten die je net hebt toegevoegd elk aan een klas toegevoegd worden. 
+- Ze mogen niet in de zelfde klas terecht komen.
+
+*Vergeet niet te committen!*
 
 ## 4 Overzicht inschrijvingen
 Toon van studenten:
 - die in een klas zitten waarvan het cohort 2019 is
 - het ov_nummer en de volledige naam
-- van de klas de klas_code
+- de klas_code van hun klassen
 - gesorteerd op klas_code en achternaam
+
+*Vergeet niet te committen!*
