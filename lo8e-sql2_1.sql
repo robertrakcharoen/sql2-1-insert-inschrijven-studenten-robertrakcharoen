@@ -86,6 +86,9 @@ ALTER TABLE klassen ADD FOREIGN KEY (opleiding_code) REFERENCES opleidingen(ople
 ALTER TABLE cijfers ADD FOREIGN KEY (ov_nummer) REFERENCES studenten(ov_nummer);
 ALTER TABLE cijfers ADD FOREIGN KEY (vak_code) REFERENCES vakken(vak_code);
 
+INSERT INTO opleidingen(`opleiding_code`, `titel`) VALUES
+	('amo', 'Applicatie- en Mediaontwikkelaar');
+
 INSERT INTO docenten(docent_code, voorletters, tussenvoegsel, achternaam) VALUES
 	('brc01','J.P.','','Brackenhoff'), 
     ('rs001','H.', 'van', 'Rosendahl'), 
@@ -102,8 +105,8 @@ INSERT INTO klassen
     ('lo8e-amo4','brc01', 2018, 'amo');
     
 INSERT INTO studenten (ov_nummer, achternaam, tussenvoegsel, voornaam, geboortedatum, postcode, plaats, gewicht, lengte, inschrijvings_datum) VALUES
-	(86476,'Choo','','Jeremy','1993-07-27','2211 SG','Noordwijkerhout', 73.2, 1.86, 01-01-2016),
-	(87956,'Dekkers','','Kenneth','1992-08-05','2152 EX','Nieuw-Vennep', 82.1, 1.87, 01-01-2016),
+	(86476,'Choo','','Jeremy','1993-07-27','2211 SG','Noordwijkerhout', 73.2, 1.86, 01-01-2018),
+	(87956,'Dekkers','','Kenneth','1992-08-05','2152 EX','Nieuw-Vennep', 82.1, 1.87, 01-01-2018),
 	(77425,'Geulkes','','Paul','1994-03-26','2465 AG','Rijsaterwoude', 67.0, 1.77, 01-01-2018),
 	(85204,'Grommans','','Jim','1993-07-13','2321 HP','Leiden', 72.5, 1.85, 01-01-2018),
 	(86043,'Groen','','Luke','1994-07-05','2401 VP','Alphen a/d Rijn', 77.2, 1.86, 01-01-2018),
