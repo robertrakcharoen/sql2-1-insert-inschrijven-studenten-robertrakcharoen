@@ -4,7 +4,7 @@ USE `lo8e_sql2`;
 
 CREATE TABLE `opleidingen` (
 	`opleiding_code` VARCHAR(3) NOT NULL,
-	`titel` VARCHAR(10) NOT NULL,
+	`titel` VARCHAR(100) NOT NULL,
     PRIMARY KEY (`opleiding_code`)
 );
 
@@ -105,35 +105,35 @@ INSERT INTO klassen
     ('lo8e-amo4','brc01', 2018, 'amo');
     
 INSERT INTO studenten (ov_nummer, achternaam, tussenvoegsel, voornaam, geboortedatum, postcode, plaats, gewicht, lengte, inschrijvings_datum) VALUES
-	(86476,'Choo','','Jeremy','1993-07-27','2211 SG','Noordwijkerhout', 73.2, 1.86, 01-01-2018),
-	(87956,'Dekkers','','Kenneth','1992-08-05','2152 EX','Nieuw-Vennep', 82.1, 1.87, 01-01-2018),
-	(77425,'Geulkes','','Paul','1994-03-26','2465 AG','Rijsaterwoude', 67.0, 1.77, 01-01-2018),
-	(85204,'Grommans','','Jim','1993-07-13','2321 HP','Leiden', 72.5, 1.85, 01-01-2018),
-	(86043,'Groen','','Luke','1994-07-05','2401 VP','Alphen a/d Rijn', 77.2, 1.86, 01-01-2018),
-	(77245,'Haastbroek','','Stefanie','1992-05-26','2211 LK','Noordwijkerhout', 77.9, 1.77, 01-01-2018),
-	(79899,'Heemskerken','','Erik','1992-09-09','2231 DG','Rijnsburg', 63.2, 1.79, 01-01-2018),
-	(83091,'Hein','','Ruben','1993-09-26','2251 XZ','Voorschoten',  74.0, 1.83, 01-01-2018),
-	(85526,'Hoogenelst','','Dylan','1992-12-11','2402 MP','Alphen a/d Rijn', 75.6, 1.85, 01-01-2018),
-	(79553,'Martins','','Evander','1992-12-22','2352 KE','Leiderdorp', 79.3, 1.89, 01-01-2018),
-	(78854,'Meijs','van der','Mark','1992-09-27','2231 BP','Rijnsburg', 72.9, 1.88, 01-01-2018),
-	(78979,'Marauw','','Mike','1993-10-18','2265 EL','Leidschendam', 73.0, 1.78, 01-01-2018),
-	(88724,'Nietvelden','','Mitchel','1992-12-14','2421 HR','NIeuwkoop', 73.6, 1.88, 01-01-2018),
-	(87165,'Reesink','van','Dennis','1993-06-23','2281 BE','Rijswijk (ZH)', 79.0, 1.87, 01-01-2018),
-	(86046,'Rijn','van','Daan','1993-12-29','2376 BA','Nieuwe Wetering', 75.0, 1.86, 01-01-2017),
-	(79837,'Rietland','','Pieter','1992-08-27','2156 LB','Weteringbrug', 78.2, 1.79, 01-01-2018),
-	(85957,'Roberts','','Timo','1993-09-07','2272 EV','Voorburg', 72.9, 1.85, 01-01-2018),
-	(84907,'Rosbief','','Daniel','1994-03-16','2771 MX','Boskoop', 65.3, 1.84, 01-01-2017),
-	(83680,'Schopman','','Gavin','1993-11-11','2235 DD','Valkenburg (ZH)', 64.6, 1.83, 01-01-2018),
-	(77717,'Stoel','van der','Tobias','1993-06-05','2408 TR','Alphen a/d Rijn', 77.1, 1.77, 01-01-2018),
-	(88856,'The','','Lau','1989-11-29','2271 BK','Voorburg', 79.5, 1.88, 01-01-2018),
-	(84729,'Veen','van','Melanie','1992-05-22','2353 KE','Leiderdorp', 73.1, 1.84, 01-01-2018),
-	(85183,'Blaise','','Pascal','1994-09-20','2431 ZE','Noorden', 74.1, 1.85, 01-01-2018),
-	(86521,'Vries','de','Thomas','1993-04-04','2225 LA','Katwijk', 78.3, 1.81, 01-01-2018),
-	(84854,'Maasdijk','van','Julius','1994-04-25','2241 VZ','Wassenaar', 75.2, 1.80, 01-01-2018),
-	(86066,'Wijk','van','Nicky','1994-05-27','2411 AK','Bodegraven',  78.3, 1.86, 01-01-2018),
-	(89429,'Wils','','Bob','1991-04-30','2231 ZX','Rijnsburg', 70.9, 1.90, 01-01-2018),
-	(84565,'Yan','','Davy','1993-03-05','2408 JV','Alphen a/d Rijn', 71.1, 1.84, 01-01-2018),
-	(87989,'Zwam','van der','Rick','1991-07-10','2201 SW','Noordwijk', 74.4, 1.87, 01-01-2018);
+	(86476,'Choo','','Jeremy','1993-07-27','2211 SG','Noordwijkerhout', 73.2, 1.86, '2018-01-01'),
+	(87956,'Dekkers','','Kenneth','1992-08-05','2152 EX','Nieuw-Vennep', 82.1, 1.87, '2018-01-01'),
+	(77425,'Geulkes','','Paul','1994-03-26','2465 AG','Rijsaterwoude', 67.0, 1.77, '2018-01-01'),
+	(85204,'Grommans','','Jim','1993-07-13','2321 HP','Leiden', 72.5, 1.85, '2018-01-01'),
+	(86043,'Groen','','Luke','1994-07-05','2401 VP','Alphen a/d Rijn', 77.2, 1.86, '2018-01-01'),
+	(77245,'Haastbroek','','Stefanie','1992-05-26','2211 LK','Noordwijkerhout', 77.9, 1.77, '2018-01-01'),
+	(79899,'Heemskerken','','Erik','1992-09-09','2231 DG','Rijnsburg', 63.2, 1.79, '2018-01-01'),
+	(83091,'Hein','','Ruben','1993-09-26','2251 XZ','Voorschoten',  74.0, 1.83, '2018-01-01'),
+	(85526,'Hoogenelst','','Dylan','1992-12-11','2402 MP','Alphen a/d Rijn', 75.6, 1.85, '2018-01-01'),
+	(79553,'Martins','','Evander','1992-12-22','2352 KE','Leiderdorp', 79.3, 1.89, '2018-01-01'),
+	(78854,'Meijs','van der','Mark','1992-09-27','2231 BP','Rijnsburg', 72.9, 1.88, '2018-01-01'),
+	(78979,'Marauw','','Mike','1993-10-18','2265 EL','Leidschendam', 73.0, 1.78, '2018-01-01'),
+	(88724,'Nietvelden','','Mitchel','1992-12-14','2421 HR','NIeuwkoop', 73.6, 1.88, '2018-01-01'),
+	(87165,'Reesink','van','Dennis','1993-06-23','2281 BE','Rijswijk (ZH)', 79.0, 1.87, '2018-01-01'),
+	(86046,'Rijn','van','Daan','1993-12-29','2376 BA','Nieuwe Wetering', 75.0, 1.86, '2017-01-01'),
+	(79837,'Rietland','','Pieter','1992-08-27','2156 LB','Weteringbrug', 78.2, 1.79, '2018-01-01'),
+	(85957,'Roberts','','Timo','1993-09-07','2272 EV','Voorburg', 72.9, 1.85, '2018-01-01'),
+	(84907,'Rosbief','','Daniel','1994-03-16','2771 MX','Boskoop', 65.3, 1.84, '2017-01-01'),
+	(83680,'Schopman','','Gavin','1993-11-11','2235 DD','Valkenburg (ZH)', 64.6, 1.83, '2018-01-01'),
+	(77717,'Stoel','van der','Tobias','1993-06-05','2408 TR','Alphen a/d Rijn', 77.1, 1.77, '2018-01-01'),
+	(88856,'The','','Lau','1989-11-29','2271 BK','Voorburg', 79.5, 1.88, '2018-01-01'),
+	(84729,'Veen','van','Melanie','1992-05-22','2353 KE','Leiderdorp', 73.1, 1.84, '2018-01-01'),
+	(85183,'Blaise','','Pascal','1994-09-20','2431 ZE','Noorden', 74.1, 1.85, '2018-01-01'),
+	(86521,'Vries','de','Thomas','1993-04-04','2225 LA','Katwijk', 78.3, 1.81, '2018-01-01'),
+	(84854,'Maasdijk','van','Julius','1994-04-25','2241 VZ','Wassenaar', 75.2, 1.80, '2018-01-01'),
+	(86066,'Wijk','van','Nicky','1994-05-27','2411 AK','Bodegraven',  78.3, 1.86, '2018-01-01'),
+	(89429,'Wils','','Bob','1991-04-30','2231 ZX','Rijnsburg', 70.9, 1.90, '2018-01-01'),
+	(84565,'Yan','','Davy','1993-03-05','2408 JV','Alphen a/d Rijn', 71.1, 1.84, '2018-01-01'),
+	(87989,'Zwam','van der','Rick','1991-07-10','2201 SW','Noordwijk', 74.4, 1.87, '2018-01-01');
     
 INSERT INTO klassen_studenten(ov_nummer, klas_code) VALUES
 	(86476,'lo8e-amo1'),
