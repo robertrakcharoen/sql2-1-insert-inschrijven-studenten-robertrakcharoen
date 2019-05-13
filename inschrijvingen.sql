@@ -26,4 +26,17 @@ SET
 	actief = FALSE
 WHERE
 	inschrijvings_datum < '2017-01-01';
+    
+USE `lo8e_sql2`;
+SELECT studenten.ov_nummer, studenten.voornaam, studenten.achternaam, klassen_studenten.klas_code, klassen.cohort,
+		CONCAT(docenten.voorletters, docenten.tussenvoegsel, docenten.achternaam) AS volledigenaam
+FROM studenten
+LEFT JOIN klassen_studenten
+ON studenten.ov_nummer = klassen_studenten.ov_nummer
+LEFT JOIN klassen
+ON klassen.klas_code = klassen_studenten.klas_code
+LEFT JOIN docenten
+ON docenten.docent_code = klassen.slb_code;
+
+
 	
