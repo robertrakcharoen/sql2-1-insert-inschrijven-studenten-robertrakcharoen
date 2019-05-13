@@ -20,4 +20,10 @@ SET
 	geboortedatum = '2001-02-25'
 WHERE
 	ov_nummer = 92514;
+    
+UPDATE studenten
+SET
+	actief = FALSE
+WHERE
+	inschrijvings_datum < '2017-01-01';
 	
